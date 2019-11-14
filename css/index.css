@@ -69,6 +69,170 @@ h1, h2, h3, h4, h5 {
 
 /* Beginning of index.html */
 
+	/* Beginning of tablets RWD */
+
+		/* On screens that are 800px wide or less, center position the following: great idea logo, the navbar, title and get started button. Remove round picture. */
+
+		@media (max-width: 800px) {
+
+			.container-nav {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+				margin: auto;
+			}
+
+			header {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+			}
+
+			header nav {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap-reverse;
+				padding: 0px;
+				margin-right: 25%;
+			}
+
+			header nav section.logo {
+				display: flex;
+				justify-content: center;
+				width: 30%;
+				margin-left: 80px;
+				margin-bottom: -50px;
+			}
+
+			.pagetitle {
+				display: flex;
+				justify-content: space-around;
+				max-width: 800px;
+				margin-top: -80px;
+			}
+
+			.pagetitle.pagetitle1 {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;			
+			}
+
+			.pagetitle.pagetitle1 a {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+			}
+
+			.roundpic {
+				visibility: hidden;
+			}
+
+			.featuresabout.features.p {
+				display: flex;
+				margin-bottom: 30px;
+				margin-right: 150px;
+			}	
+
+			.codesnippet.img {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+				text-align: center;
+			}	
+
+			footer p {
+				display: inline-block;
+				width: 22%;
+				margin-left: 38%;
+				margin-right: 38%;
+								
+			}
+		}
+
+	/* End of tablets RWD */
+	
+	/* Beginning of mobile RWD */
+
+		/* On screens that are 500px wide or less, center position the following: great idea logo, the navbar, title, main content and footer. Remove round picture. Navbar A links to be set as a centered column, one after another. */
+
+		@media (max-width: 500px) {
+			
+			..container-nav {
+				display: flex;
+				flex-flow: column;
+				max-width: 500px;
+				margin: auto;
+			}
+
+			header {
+				display: flex;
+				/* justify-content: center; */
+				max-width: 500px;
+			}
+
+			header nav {
+				display: flex;
+				justify-content: space-between;
+				/* flex-wrap: wrap-reverse; */
+				padding: 0px;
+				margin-right: 25%;
+			}
+
+			header nav section.logo {
+				display: flex;
+				justify-content: center;
+				width: 30%;
+				margin-left: 80px;
+				margin-bottom: -50px;
+			}
+
+			.pagetitle {
+				display: flex;
+				justify-content: space-around;
+				max-width: 800px;
+				margin-top: -80px;
+			}
+
+			.pagetitle.pagetitle1 {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;			
+			}
+
+			.pagetitle.pagetitle1 a {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+			}
+
+			.roundpic {
+				visibility: hidden;
+			}
+
+			.featuresabout.features.p {
+				display: flex;
+				margin-bottom: 30px;
+				margin-right: 150px;
+			}	
+
+			.codesnippet.img {
+				display: flex;
+				justify-content: center;
+				max-width: 800px;
+				text-align: center;
+			}	
+
+			footer p {
+				display: inline-block;
+				width: 22%;
+				margin-left: 38%;
+				margin-right: 38%;
+								
+			}
+		}
+
+	/* End of mobile RWD */
+
 header nav {
 	display: flex;
 	flex-direction: row;
@@ -79,13 +243,13 @@ header nav {
 
 header nav a {
 	display: flex;
+	justify-content: center;
 	background-color: white;
 	color: grey;
 	text-align: right;
 	padding: auto;
 	margin: 50px 0px 50px 0px;
 	font-size: 18px;
-	justify-content: center;
 }
 
 header nav section.logo {
